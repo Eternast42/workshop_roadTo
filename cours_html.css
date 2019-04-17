@@ -1,0 +1,98 @@
+.class {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.containerText {
+    margin: 50px 0px 75px;
+    display: flex;
+}
+
+.back {
+    color: white;
+    background-color: #0098c2;
+    border: none;
+    width: 175px;
+    height: 55px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.matter {
+
+}
+
+.percentBar {
+    margin: 0 auto;
+    height: 50px;
+    width: 900px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+.percent {
+    height: 50px;
+    width: 480px;
+    background-color: #0098c2;
+    border-radius: 8px;
+}
+
+.percentType {
+    color: #0098c2;
+    margin: 15px 20px 0px;
+    font-size: 21pt;
+}
+
+.containerVideo {
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    height: 600px;
+    width: 1115px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listLines {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.listSquare {
+    height: 100px;
+    width: 150px;
+    background-color: #0098c2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.2);
+    color: white;
+    margin-right: 20px;
+}
+.classNumber {
+    margin: 30px 0px 100px;
+
+}
+
+.classNumberName {
+    background-color: #0098c2;
+    color: white;
+    border-radius: 8px;
+    height: 55px;
+    width: 240px;
+    border: none;
+}

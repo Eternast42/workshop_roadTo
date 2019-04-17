@@ -31,6 +31,7 @@ body {
   font-family: "Orkney";
   width: 100%;
 }
+
 h2,
 h1,
 h3 {
@@ -51,18 +52,64 @@ h3 {
   height: 350px;
   display: flex;
   text-align: justify;
-flex-direction: column;
-margin: 0 auto;
-padding-top: 75px;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 75px;
   width: 85%;
-  line-height: 2;
+  line-height: 30pt;
 }
 
 .intro h2 {
   font-weight: bolder;
+  margin-top: 100px;
   margin-bottom: 25px;
   font-family: "Poppins";
   font-size: 25px;
+}
+
+.into p {
+  text-align: justify;
+}
+
+.lineprincipal {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  width: 100%
+}
+
+.info {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+
+.infoContainer {
+  z-index: 100;
+  width: 400px;
+  height: 280px;
+  background-color: #0083b0;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.infoImg {
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.infoText {
+  width: 400px;
+  text-align: center;
+  line-height: 30pt;
+  font-size: 16pt;
 }
 
 
@@ -105,7 +152,7 @@ footer {
 }
 
 p {
-  font-size: 16px;
+  font-size: 16pt;
 }
 
 .ongletHeader {
@@ -279,12 +326,12 @@ p {
   height: 200px;
 }
 
+
 .slide {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 100%;
-  background-image: linear-gradient(to right, #0083b0,#009bc5,#0083b0 );  
+  width: 1920px;
   height: 640px;
 }
 
@@ -293,20 +340,32 @@ p {
   background-size: cover;
 }
 
-.line_courb{
+.line_courb {
   position: absolute;
-  left: 875px;
+  left: 835px;
 }
 
 
-.line_courb2{
+.line_courb2 {
   position: absolute;
-  left: 900px;
+  left: 860px;
 }
 
-.line_courb3{
+.line_courb3 {
   position: absolute;
-  left: 925px;
+  left: 885px;
+}
+
+#img01 {
+  width: 1620px;
+}
+
+#img02 {
+  width: 1620px;
+}
+
+#img03 {
+  width: 1620px;
 }
 
 .hidden {
@@ -314,26 +373,26 @@ p {
 }
 
 .image1 {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   float: left;
-  margin-right: 100px;
+  margin-right: 250px;
   border-radius: 5%;
 }
 
 .image2 {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   float: left;
-  margin-right: 100px;
+  margin-right: 250px;
   border-radius: 5%;
 }
 
 .image3 {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   float: left;
-  margin-right: 100px;
+  margin-right: 250px;
   border-radius: 5%;
 }
 
@@ -348,12 +407,14 @@ p {
   margin-bottom: 75px;
   color: white;
   font-size: 21pt;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .text {
   color: white;
-  font-size: 13pt;
+  font-size: 18pt;
+  line-height: 30px;
+  text-align: justify;
 }
 
 #next {
@@ -409,17 +470,20 @@ p {
 
 
 .slidercontent {
- width: 100%;
- display: flex;
- justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
-  height: 600px;
+  height: 640px;
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 1px solid rgba(0, 0, 0);
-  
+  background-image: linear-gradient(to right, #0083b0, #009bc5, #0083b0);
+
 }
+
+
 .containerFounder {
   display: flex;
   width: 100%;
@@ -427,10 +491,12 @@ p {
   align-items: center;
   height: 400px;
 }
+
 #nosF {
   margin-top: 25px;
   margin-left: 110px;
 }
+
 .containerLines {
   height: 230px;
   width: 150px;
@@ -455,10 +521,10 @@ p {
 
 
 .imageLv {
-  width: 230px;
+  width: 344px;
   height: 230px;
+  box-shadow: black 5px 5px 10px;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px black;
 }
 
 .footercontent {

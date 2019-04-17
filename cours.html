@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./landing-style.css">
     <link rel="stylesheet" href="./cours.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cour</title>
 </head>
 
 <body>
+    <header class="headerMenu">
+        <nav class="ongletHeader">Cours</nav>
+        <nav class="ongletHeader">Rejoins-nous</nav>
+        <img src="" alt="">
+        <nav class="ongletHeader poppers">Inscription</nav>
+        <nav class="ongletHeader dropdown">
+            Connection
+            <div class="dropdown-content">
+                <input type="text" placeholder="mail">
+                <input type="text" placeholder="password">
+                <input type="submit" class="poppers" value="Inscriver vous">
+            </div>
+        </nav>
+    </header>
     <h1>Les cours</h1>
     <section class="work">
         <div class="container">
@@ -40,19 +55,27 @@
             </div>
         </div>
         <div class="container">
-            <img  class="founderThird" src="./content/images/zino.jpeg" alt="">
+            <img class="founderThird" src="./content/images/zino.jpeg" alt="">
             <h3 class="founderName">Nicolas ZINOVIEF</h3>
             <h2 class="matter">Web Development</h2>
             <div class="containerButton">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="html">HTML<br>Facile<br>54%<br>5:00</button>
+                <button class="css">CSS<br>Facile<br>34%<br>12:00</button>
+                <button class="php">PHP<br>Moyen<br>0%<br>18:00</button>
+                <button class="js">JavaScript<br>Moyen<br>5%<br>13:00</button>
+                <button class="bdd">Base de donnée<br>Difficile<br>2%<br>22:00</button>
+                <button class="other">Plus</button>
             </div>
         </div>
     </section>
+    <footer class="footercontent">
+            <nav class="contentOnglet">
+            <nav class="ongletFooter">LOGO</nav>
+            <nav class="ongletFooter">ADMISSION</nav>
+            <nav class="ongletFooter">EEMI</nav>
+            <nav class="ongletFooter">AIDE & FAQ</nav>
+          </nav>
+          </footer>
 </body>
 
 </html>
