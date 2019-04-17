@@ -504,6 +504,19 @@ p {
   height: 400px;
 }
 
+.containerFounder section {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFounder h2 {
+margin-top: 25px;
+}
+
+.containerFounder img:hover {
+    transform: scale(1.1);
+}
+
 #nosF {
   margin-top: 25px;
   margin-left: 110px;
@@ -546,7 +559,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
 }
-}
+
 
 .footercontainer {
   font-size: 21px;
@@ -601,6 +614,16 @@ p {
   margin-left: 110px;
 }
 
+.founder-picture {
+  
+  cursor: pointer;
+}
+.founder-quote {
+
+  width: 344px;
+  display: none;
+  overflow: hidden;
+}
 .mention {
   width: 1000px;
   text-align: center;
