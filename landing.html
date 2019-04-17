@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./landing-style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RoadTo</title>
+</head>
+
+<body>
+  <div id="flou"></div>
+  <header class="headerMenu">
+    <div><img src="./content/images/workshop_logo.png" alt="logo" class="logo"></div>
+    <img src="./content/images/loupe.png" alt="search" id="loupe">
+    <a href="cours.html">
+      <nav class="ongletHeader">Cours</nav>
+    </a>
+    <nav class="ongletHeader">Contactez nous</nav>
+    <nav class="ongletHeader poppers">Inscription</nav>
+    <nav class="ongletHeader dropdown">
+      Connection
+      <div class="dropdown-content">
+        <input type="text" placeholder="mail">
+        <input type="text" placeholder="password">
+        <input type="submit" class="poppers" value="Connection">
+        <input type="submit" class="poppers" value="Inscrivez vous">
+        <a href="landing.html">mot de passe oublier</a>
+      </div>
+    </nav>
+  </header>
+  <div id="popup" class="hidden">
+    <header class="headerPopup">
+      <div class="containerClose">
+        <button id="close">X</button>
+      </div>
+    </header>
+    <div class="containerGoogle">
+      <button id="google">Sign with Google</button>
+      <h1>Inscription</h1>
+    </div>
+    <div class="contentPopup">
+      <input id="champText" type="text" placeholder="prenom">
+      <input id="champText" type="text" placeholder="nom">
+      <input id="champText" type="text" placeholder="e-mail">
+      <div>
+        <input type="checkbox" id="checkbox">
+        <p>if you want more control over the direction of the gradient, you can define an angle, instead of the
+          predefined directions (to bottom, to top, to right, to left, to bottom right, etc.).</p>
+      </div>
+      <button>S'inscrire</button>
+    </div>
+
+  </div>
+  <section class="container">
+    <div class="intro">
+      <h2>Bienvenue sur RoadTo EEMI, notre plateforme de formation en ligne !</h2>
+      <p>L’Ecole Européenne des Métiers de l’Internet vous offre la possibilité de suivre des cours en ligne mis à
+        disposition par les intervenants de l’école. Cette plateforme vous donne accès aux contenus des cours de chaque
+        spécialité à savoir le développement, le design, le marketing et un enseignement transverse, des mises à jours
+        sont faites régulièrement pour vous assurer l’actualité et la qualité des contenus.<br>
+        Vous avez la possibilité, pour chaque cours, d'accéder à une présentation du cours, une vidéo et un quiz afin de
+        vous évaluer.<br>
+        Au terme d'une formation, vous pouvez obtenir une certification afin de mettre en valeur les réalisations
+        effectuées et les techniques apprises lors du cours sur un support accessible rapidement et facilement</p>
+    </div>
+    <div>
+        <h3 id="nosF">Nos fondateurs</h3>
+        <div class="containerFounder">
+          <div class="containerLines">
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <img src="./content/images/marc_simoncini.jpg" class="image" alt="Marc Simoncini">
+          <img src="./content/images/marcantoine_granjon.jpg" class="image" alt="Marc-antoine Granjon">
+          <img src="./content/images/xavierniel.jpg" class="image" alt="Xavier Niel">
+          <div class="containerLines">
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+    <div class="slidercontent">
+        <section class="slide">
+          <button id="prev"></button>
+          <div class="slider_img" id="img01">
+            <img class="line_courb" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb2" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb3" src="./content/images/lign_courb.png" alt="line_courb">
+            <h2 class="desc">Nos Cours</h2>
+            <img class="image1" src="./content/images/dev.jpeg" alt="dev">
+            <h3 class="titre">WEB DEVELOPMENT</h3>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa iste architecto ea dolore.
+              Magni
+              cum iure
+              ipsam voluptatum! Iure enim cupiditate facere architecto vero vitae vel nemo cum voluptatibus hic.</p>
+          </div>
+          <div class="slider_img" id="img02">
+            <img class="line_courb" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb2" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb3" src="./content/images/lign_courb.png" alt="line_courb">
+            <h2 class="desc">Nos Cours</h2>
+            <img class="image2" src="./content/images/market.jpeg" alt="dev">
+            <h3 class="titre">titre</h3>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa iste architecto ea dolore.
+              Magni
+              cum iure
+              ipsam voluptatum! Iure enim cupiditate facere architecto vero vitae vel nemo cum voluptatibus hic.</p>
+          </div>
+          <div class="slider_img" id="img03">
+            <img class="line_courb" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb2" src="./content/images/lign_courb.png" alt="line_courb">
+            <img class="line_courb3" src="./content/images/lign_courb.png" alt="line_courb">
+            <h2 class="desc">Nos Cours</h2>
+            <img class="image3" src="./content/images/web_design .jpeg" alt="dev">
+            <h3 class="titre">titre</h3>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa iste architecto ea dolore.
+              Magni
+              cum iure
+              ipsam voluptatum! Iure enim cupiditate facere architecto vero vitae vel nemo cum voluptatibus hic.</p>
+          </div>
+          <button id="next"></button>
+        </section>
+      </div>
+    <div>
+      <h3 id="nosLv">Nos anciens éléves</h3>
+      <div class="containerFounder">
+          <div class="containerLines">
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <img src="./content/images/premierElv.png" class="imageLv" alt="Marc Simoncini">
+          <img src="./content/images/deuxiemeElv.png" class="imageLv" alt="Marc-antoine Granjon">
+          <img src="./content/images/troisiemeElv.png" class="imageLv" alt="Xavier Niel">
+          <div class="containerLines">
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <footer class="footercontent">
+    <nav class="contentOnglet">
+      <nav class="ongletFooter">LOGO</nav>
+      <nav class="ongletFooter">ADMISSION</nav>
+      <nav class="ongletFooter">EEMI</nav>
+      <nav class="ongletFooter">AIDE & FAQ</nav>
+    </nav>
+    <nav class="contentOnglet2">
+        <img src="./content/images/fb-blanc.png" alt="facebook">
+        <img src="./content/images/linkedinwhite.png" alt="linkdln">
+        <img src="./content/images/twitter.png" alt="twitter">
+        <img src="./content/images/youtube.png" alt="youtube">
+    </nav>
+  </footer>
+  <div class="overlay">
+    <div><img src="./content/images/workshop_logo.png" alt="logo"></div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.poppers').click(function () {
+        $('#flou').addClass('blur');
+        $('#popup').removeClass('hidden');
+      });
+      $('#close').click(function () {
+        $('#flou').removeClass('blur');
+        $('#popup').addClass('hidden');
+      });
+    });
+
+    TweenMax.to(".overlay img", 2, {
+      opacity: 0,
+      top: "-100%",
+      delay: 1,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 2, {
+      delay: 1,
+      opacity: 0,
+      top: "-100%",
+      ease: Expo.easeInOut
+    })
+
+
+    TweenMax.to(".headerMenu", 1, {
+      y: -80,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".headerMenu", 1, {
+      delay: 2.1,
+      y: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".headerMenu nav", 2, {
+      opacity: 0,
+      y: -80,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".headerMenu nav", 2, {
+      opacity: 1,
+      delay: 2.4,
+      y: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".headerMenu img", 2, {
+      opacity: 0,
+      y: -80,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".headerMenu img", 2, {
+      opacity: 1,
+      delay: 2.4,
+      y: 0,
+      ease: Expo.easeInOut
+    })
+
+    let sliderNext = document.getElementById("next");
+    let sliderPrev = document.getElementById("prev");
+
+    let sliderPicture1 = document.getElementById("img01");
+    let sliderPicture2 = document.getElementById("img02");
+    let sliderPicture3 = document.getElementById("img03");
+
+    let sliderImgClass = document.getElementsByClassName("slider_img");
+
+    let a = 0;
+    sliderPicture2.classList.add('hidden');
+    sliderPicture3.classList.add('hidden');
+
+    sliderNext.onclick = function () {
+      a = (a == 2) ? 0 : a + 1;
+      for (let i = 0; i < 3; i++) {
+        if (i === a) {
+          sliderImgClass[a].classList.remove('hidden');
+        } else {
+          sliderImgClass[i].classList.add('hidden');
+        }
+      }
+    }
+
+    sliderPrev.onclick = function () {
+      a = (a == 0) ? 2 : a - 1;
+      for (let i = 0; i < 3; i++) {
+        if (i === a) {
+          sliderImgClass[a].classList.remove('hidden');
+        } else {
+          sliderImgClass[i].classList.add('hidden');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
