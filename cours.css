@@ -3,6 +3,28 @@
     src: url("./content/font/Orkney\ Regular.otf");
 }
 
+.headerMenu {
+    font-size: 21px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 110px;
+    color: #f5f6fa;
+    background-image: linear-gradient(to right, #0083b0,#009bc5,#0083b0 ); 
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  }
+
+  .ongletHeader {
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+
 body {
     font-family: "Orkney";
 }
@@ -19,6 +41,7 @@ h1 {
     width: 70%;
     ;
     justify-content: space-around;
+    margin-bottom: 45px;
 }
 
 .container {
@@ -26,7 +49,6 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     width: 20%;
-
 }
 
 .founder {
@@ -34,6 +56,7 @@ h1 {
     width: 180px;
     border-radius: 50%;
     box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
 }
 
 .founderSecond {
@@ -41,6 +64,7 @@ h1 {
     width: 180px;
     border-radius: 50%;
     box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
 }
 
 .founderThird {
@@ -48,6 +72,7 @@ h1 {
     width: 180px;
     border-radius: 50%;
     box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
 }
 
 .founderName {
@@ -66,16 +91,68 @@ h1 {
 }
 
 .containerButton {
-    width: 90%;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 button {
     height: 100px;
     width: 100px;
+    background-color: white;
     border-radius: 50%;
     margin-bottom: 25px;
-    border: none;
+    border: 1px solid rgb(63, 63, 63, 0.2);
+    background-size: 65px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    color: rgb(255, 255, 255, 0.0);
+    transition: 0.3s transform;
+    font-family: "Orkney";  
+}
+
+button:hover {
+    transform: scale(1.2,1.2);
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.2);
+    color: rgb(70, 70, 70);
+    background-image: none;
+    font: bold;
+}
+
+
+
+
+.html {
+    background-image: url(./content/images/html.svg);
+    background-position-x: 55%;
+    background-position-y: 75%;
+}
+
+.css {
+    background-image: url(./content/images/css.svg);
+    background-position-x: 75%;
+    background-position-y: 50%;
+}
+
+.php {
+    background-image: url(./content/images/php.svg);
+    background-position-x: 70%;
+    background-position-y: 70%;
+}
+
+.js {
+    background-image: url(./content/images/JS.svg);
+}
+
+.bdd {
+    background-image: url(./content/images/bdd.svg);
+    background-position-x: 50%;
+    background-position-y: 90%;
+}
+
+.other {
+    background-image: url(./content/images/other.svg);
 }
