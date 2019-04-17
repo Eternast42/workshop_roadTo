@@ -121,7 +121,7 @@
             <img class="line_courb2" src="./content/images/lign_courb.png" alt="line_courb">
             <img class="line_courb3" src="./content/images/lign_courb.png" alt="line_courb">
             <h2 class="desc">Nos Cours</h2>
-            <img class="image3" src="./content/images/web_design .jpeg" alt="dev">
+            <img class="image3" src="./content/images/web_design.jpeg" alt="dev">
             <h3 class="titre">titre</h3>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa iste architecto ea dolore.
               Magni
@@ -231,6 +231,31 @@
       opacity: 1,
       delay: 2.4,
       y: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".intro p", 2, {
+      opacity: 0,
+      y: -200,
+      ease: Expo.easeInOut
+    })
+    TweenMax.to(".intro p", 2, {
+      opacity: 1,
+      delay: 3.1,
+      y: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".intro h2", 2, {
+      opacity: 0,
+      x: -100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".intro h2", 2, {
+      opacity: 1,
+      delay: 3.1,
+      x: 0,
       ease: Expo.easeInOut
     })
 
