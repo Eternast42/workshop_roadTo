@@ -331,7 +331,7 @@ p {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 1920px;
+  width: 100%;
   height: 640px;
 }
 
@@ -380,6 +380,10 @@ p {
   border-radius: 5%;
 }
 
+.image1:hover {
+  transform: scale(1.1);
+}
+
 .image2 {
   width: 600px;
   height: 450px;
@@ -388,12 +392,20 @@ p {
   border-radius: 5%;
 }
 
+.image2:hover {
+  transform: scale(1.1);
+}
+
 .image3 {
   width: 600px;
   height: 450px;
   float: left;
   margin-right: 250px;
   border-radius: 5%;
+}
+
+.image3:hover {
+  transform: scale(1.1);
 }
 
 .desc {
@@ -528,20 +540,39 @@ p {
 }
 
 .footercontent {
+  color: white;
+  background-image: linear-gradient(to right, #0083b0, #009bc5, #0083b0);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+}
+
+.footercontainer {
   font-size: 21px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 220px;
-  color: #2f3640;
-  background-image: linear-gradient(to right, #0083b0, #009bc5, #0083b0);
 }
 
 .contentOnglet {
-  width: 650px;
+  margin: 50px 0px 25px;
+  width: 1000px;
   display: flex;
+  justify-content: space-between;
+}
+
+.containerCenter {
+  display: flex;
+  justify-content: center;
+  width: 250px;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo_footer {
+  height: 45px;
 }
 
 .contentOnglet2 {
@@ -552,6 +583,11 @@ p {
   align-content: space-around;
 }
 
+.img_social {
+  height: 30px;
+  margin: 0px 20px;
+}
+
 .image {
   width: 344px;
   height: 230px;
@@ -560,14 +596,13 @@ p {
 }
 
 
-
-.contentOnglet2 img {
-  height: 60px;
-  width: 60px;
-
-}
-
 #nosLv {
   margin-top: 65px;
   margin-left: 110px;
+}
+
+.mention {
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 40px;
 }
